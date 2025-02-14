@@ -20,7 +20,7 @@
             <a
                 href="https://github.com/pact-foundation/pact-python/actions/workflows/test.yml"><img
                 src="https://img.shields.io/github/actions/workflow/status/pact-foundation/pact-python/test.yml?branch=main&label=test"
-                alt="Test Status"></a>
+                alt="Test Status!"></a>
             <a
                 href="https://github.com/pact-foundation/pact-python/actions/workflows/build.yml"><img
                 src="https://img.shields.io/github/actions/workflow/status/pact-foundation/pact-python/build.yml?branch=main&label=build"
