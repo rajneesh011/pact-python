@@ -63,7 +63,7 @@ jobs:
           PACT_BROKER_BASIC_AUTH_USERNAME: pactbroker
           PACT_BROKER_BASIC_AUTH_PASSWORD: pactbroker
           # Database
-          PACT_BROKER_DATABASE_URL: sqlite:////tmp/pact_broker.sqlite
+          PACT_BROKER_DATABASE_URL: postgresql://postgres:m2n1shlko@database-1.ctqo0waa4ulf.us-east-1.rds.amazonaws.com:5432/pact
 
     strategy:
       fail-fast: false
@@ -190,7 +190,7 @@ jobs:
           PACT_BROKER_BASIC_AUTH_USERNAME: pactbroker
           PACT_BROKER_BASIC_AUTH_PASSWORD: pactbroker
           # Database
-          PACT_BROKER_DATABASE_URL: sqlite:////tmp/pact_broker.sqlite
+          PACT_BROKER_DATABASE_URL: postgresql://postgres:m2n1shlko@database-1.ctqo0waa4ulf.us-east-1.rds.amazonaws.com:5432/pact
 
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
