@@ -116,7 +116,7 @@ jobs:
           done
 
       - name: Run tests
-        run: hatch run test --broker-url=http://pactbroker:pactbroker@localhost:9292 --container
+        run: hatch run test --broker-url=http://pact-lb-1820998503.us-east-1.elb.amazonaws.com --container
 
       - name: Upload coverage
         if: matrix.python-version == env.STABLE_PYTHON_VERSION && matrix.os == 'ubuntu-latest'
@@ -223,8 +223,7 @@ jobs:
 
       - name: Examples
         run: >
-          hatch run example --broker-url=http://pactbroker:pactbroker@localhost:9292
-
+          hatch run example --broker-url=http://pact-lb-1820998503.us-east-1.elb.amazonaws.com
       - name: Upload coverage
         uses: codecov/codecov-action@13ce06bfc6bbe3ecf90edbbf1bc32fe5978ca1d3  # v5.3.1
         with:
